@@ -46,7 +46,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: "18.17.0"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Install Dependencies and Build
         run: |
@@ -63,7 +63,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16.13' # Adjust the Node.js version as needed
+          node-version: '18.17.0' # Adjust the Node.js version as needed
 
       - name: Install Dependencies and Run Tests
         run: |
