@@ -24,6 +24,11 @@
 * The docker credentials were added as secrets in the GitHub repository to allow the image to be pushed from GitHub to docker repository
 * In GitHub Actions", the "Publish Docker Container" was configured to create a workflow
 * A build job was added in the workflow which clones the main branch of the repository in the runner and checks the package manager being used in the project i.e., npm or yarn. Depending on the package manager being used, it sets up node for the Next.js app and then runs then installs all the dependencies and run the "npm run build" command to build the project
+![Image Alt text](/public/images/Build.JPG "Build Job")
+
 * A test job was added in the workflow which clones the the main branch of the repository in the runner and installes node, after which it installs all the dependencies. It then runs the command "npm t", which is used to run the test suites
+![Image Alt text](/public/images/Test.JPG "Test Job")
+
 * The registery name and image name were stored as environment variables in the workflow
 * The job obtained from "Publish Docker Container" was modified to build and push the image to the repository created in dockher hub. The original verison pushes it to Github packages. The modification was made in the register name, image name and the log in credentials for docker
+![Image Alt text](/public/images/Deploy.JPG "Deploy Job")
