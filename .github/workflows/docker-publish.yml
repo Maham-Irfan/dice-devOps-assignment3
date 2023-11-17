@@ -15,9 +15,9 @@ on:
 
 env:
   # Use docker.io for Docker Hub if empty
-  REGISTRY: ghcr.io
+  REGISTRY: docker.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: mahamirfan99/${{ github.repository }}
 
 
 jobs:
@@ -47,7 +47,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14' # Adjust the Node.js version as needed
+          node-version: '16.13' # Adjust the Node.js version as needed
 
       - name: Install Dependencies and Run Tests
         run: |
