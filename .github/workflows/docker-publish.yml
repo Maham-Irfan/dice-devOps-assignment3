@@ -36,7 +36,7 @@ jobs:
       - name: Install Dependencies and Build Next.js App
         run: |
           npm install
-          npm run build # Adjust the build script command as per your Next.js configuration
+          npm run build 
   test:
     runs-on: ubuntu-latest
     steps:
@@ -52,7 +52,7 @@ jobs:
       - name: Install Dependencies and Run Tests
         run: |
           npm install
-          npm test # Adjust the test script command as per your Next.js test configuration
+          npm test 
             
         
   deploy:
