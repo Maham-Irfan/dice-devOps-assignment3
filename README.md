@@ -32,3 +32,4 @@
 * The registery name and image name were stored as environment variables in the workflow
 * The job obtained from "Publish Docker Container" was modified to build and push the image to the repository created in dockher hub. The original verison pushes it to Github packages. The modification was made in the register name, image name and the log in credentials for docker
 ![Image Alt text](/public/images/Deploy.JPG "Deploy Job")
+![Image Alt text](/public/images/DockerHub.JPG "DockerHub - Repository")

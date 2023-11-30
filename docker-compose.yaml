@@ -8,6 +8,7 @@ services:
       - database
   database:
     container_name: test_postgres
+    hostname: myhost
     image: postgres  
     environment:  
       - POSTGRES_USER=test_postgres  
